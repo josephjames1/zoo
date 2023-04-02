@@ -58,4 +58,20 @@ public class Tests {
     assertEquals("Feeding Foods to Animals:", "cat eats chocolate", outputs[8]);
   }
 
+
+  @Test
+  public void test4() {
+    Zoo zoo = new Zoo();
+    Cat cat = new Cat();
+    Food food = new Food();
+
+    String output = zoo.feed(cat, food);
+
+    assertEquals("Feeding Food to a Cat:", "cat eats food", output);
+  }
+
+
+
+
+
 }
